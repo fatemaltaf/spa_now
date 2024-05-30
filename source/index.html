@@ -1,15 +1,485 @@
-@@include('header.htm')
+<!DOCTYPE html>
 
-@@include('blocks/banner.htm')
-@@include('blocks/featured-post.htm')
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Reader | Hugo Personal Blog Template</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <meta property="og:title" content="Reader | Hugo Personal Blog Template" />
+  <meta property="og:description" content="This is meta description" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:updated_time" content="2020-03-15T15:40:24+06:00" />
+</head>
+<body>
+  <!-- navigation -->
+<header class="navigation fixed-top">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-white">
+      <a class="navbar-brand order-1" href="index.html">
+        <img class="img-fluid" width="100px" src="images/logo.png"
+          alt="Reader | Hugo Personal Blog Template">
+      </a>
+      <div class="collapse navbar-collapse text-center order-lg-2 order-3" id="navigation">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#aboutus">About</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Services <i class="ti-angle-down ml-1"></i>
+            </a>
+            <div class="dropdown-menu">
+              
+              <a class="dropdown-item" href="services-massages.html">Massages</a>
+              
+              <a class="dropdown-item" href="services-hammam.html">Hammam/Bath</a>
+              
+              <a class="dropdown-item" href="services-nails.html">Nails</a>
+              
+              <a class="dropdown-item" href="services-facial.html">Facial</a>
+
+              <a class="dropdown-item" href="services-hair.html">Hair</a>
+              
+              <a class="dropdown-item" href="services-wax.html">Waxing & Threading</a>
+            </div>
+          </li>          
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#aboutus">Offers</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://wa.me/96569052003">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="order-2 order-lg-3 d-flex align-items-center">
+        <select class="m-2 border-0 bg-transparent" id="select-language">
+          <option id="en" value="" selected>En</option>
+          <option id="fr" value="">Ar</option>
+        </select>      
+        
+        <button class="navbar-toggler border-0 order-1" type="button" data-toggle="collapse" data-target="#navigation">
+          <i class="ti-menu"></i>
+        </button>
+      </div>
+
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<!-- start of banner -->
+<div class="banner text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 mx-auto">
+        <h1 class="mb-3">Welcome to Spa Now <br> <p>Where Luxury Meets Affordability</p> </h1>
+        <ul class="list-inline widget-list-inline">
+          <li class="list-inline-item"><a href="tags.html">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <img  class="banner-shape-1" width="39" height="39" viewBox="0 0 39 39" fill="none" src="images/backgrounds/banner-shape.svg"></img>
+
+  <img  class="banner-shape-2" width="50" height="50" viewBox="0 0 39 39" fill="none"  style=transform:rotate(180deg); src="images/backgrounds/banner-shape-2.svg"></img>
+
+  <img  class="banner-shape-3" width="39" height="42" viewBox="0 0 39 39" fill="none"  style=transform:rotate(280deg); src="images/backgrounds/banner-shape.svg"></img>
+
+  <svg class="banner-border" height="240" viewBox="0 0 2202 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M1 123.043C67.2858 167.865 259.022 257.325 549.762 188.784C764.181 125.427 967.75 112.601 1200.42 169.707C1347.76 205.869 1901.91 374.562 2201 1"
+      stroke-width="2" />
+  </svg>
+</div>
+<!-- end of banner -->
 
 <section class="section-sm">
   <div class="container">
     <div class="row justify-content-center">
-      @@include('blocks/post-full.htm')
-      @@include('blocks/sidebar.htm',{"sidebar": "sidebar-home"})
+      <div class="col-lg-8 mb-5 mb-lg-0">
+        <div class="col-12 mb-5 mb-lg-0">
+          <h2 class="h5 section-title">Services</h2>
+          <div class="row">
+            <div class="col-lg-4 col-sm-6">
+              <article class="card mb-4">
+                <div class="post-slider slider-sm">
+                  <img src="images/post/post-10.jpg" class="card-img-top" alt="post-thumb">
+                  <img src="images/post/post-1.jpg" class="card-img-top" alt="post-thumb">
+                </div>
+                <div class="card-body">
+                  <h3 class="h4 mb-3"><a class="post-title" href="post/elements/">Massages</a></h3>
+                </div>
+              </article>
+            </div>
+            
+            <div class="col-lg-4 col-sm-6">
+              <article class="card mb-4">
+                <div class="post-slider slider-sm">
+                  <img src="images/post/post-10.jpg" class="card-img-top" alt="post-thumb">
+                  <img src="images/post/post-1.jpg" class="card-img-top" alt="post-thumb">
+                </div>
+                <div class="card-body">
+                  <h3 class="h4 mb-3"><a class="post-title" href="post/elements/">Hammam/Bath</a></h3>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <article class="card mb-4">
+                <div class="post-slider slider-sm">
+                  <img src="images/post/post-10.jpg" class="card-img-top" alt="post-thumb">
+                  <img src="images/post/post-1.jpg" class="card-img-top" alt="post-thumb">
+                </div>
+                <div class="card-body">
+                  <h3 class="h4 mb-3"><a class="post-title" href="post/elements/">Nails</a></h3>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <article class="card mb-4">
+                <div class="post-slider slider-sm">
+                  <img src="images/post/post-10.jpg" class="card-img-top" alt="post-thumb">
+                  <img src="images/post/post-1.jpg" class="card-img-top" alt="post-thumb">
+                </div>
+                <div class="card-body">
+                  <h3 class="h4 mb-3"><a class="post-title" href="post/elements/">Facial</a></h3>
+                </div>
+              </article>
+            </div>
+            
+            <div class="col-lg-4 col-sm-6"> 
+              <article class="card mb-4">
+                <div class="post-slider slider-sm">
+                  <img src="images/post/post-10.jpg" class="card-img-top" alt="post-thumb">
+                  <img src="images/post/post-1.jpg" class="card-img-top" alt="post-thumb">
+                </div>
+                <div class="card-body">
+                  <h3 class="h4 mb-3"><a class="post-title" href="post/elements/">Hair</a></h3>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <article class="card mb-4">
+                <div class="post-slider slider-sm">
+                  <img src="images/post/post-10.jpg" class="card-img-top" alt="post-thumb">
+                  <img src="images/post/post-1.jpg" class="card-img-top" alt="post-thumb">
+                </div>
+                <div class="card-body">
+                  <h3 class="h4 mb-3"><a class="post-title" href="post/elements/">Waxing & Threading</a></h3>
+                </div>
+              </article>
+            </div>
+            <div class="col-12">
+                <div class="border-bottom border-default"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-@@include('footer.htm')
+<section class="section-sm"  id="aboutus">
+  <div class="container">
+    <div class="row justify-content-center">
+      <aside class="col-lg-4 @@sidebar">  
+  
+  <!-- Promotion -->
+  <!-- <div class="promotion">
+    <img src="images/promotion.jpg" class="img-fluid w-100">
+    <div class="promotion-content">
+      <h5 class="text-white mb-3">Create Stunning Website!!</h5>
+      <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur sociis. Etiam nunc amet id dignissim. Feugiat id tempor vel sit ornare turpis posuere.</p>
+      <a href="https://themefisher.com/" class="btn btn-primary">Get Started</a>
+    </div>
+  </div>  -->
+
+  <!-- categories -->
+  <div class="widget widget-categories">
+    <h4 class="widget-title"><span>Special Offers</span></h4>
+    <ul class="list-unstyled widget-list">
+      <li><a href="tags.html" class="d-flex">15% off for Massage + Hammam<small class="ml-auto"></small></a></li>
+      <li><a href="tags.html" class="d-flex">Haircut free with Hair color <small class="ml-auto"></small></a></li>
+      <li><a href="tags.html" class="d-flex">Become a member and get free eyebrow threading <small class="ml-auto"></small></a></li>
+      <li><a href="tags.html" class="d-flex">One time free hair treatment with Hair color <small class="ml-auto"></small></a></li>
+
+    </ul>
+  </div>
+
+  <!-- Social -->
+  <div class="widget">
+    <h4 class="widget-title"><span>Follow us to stay updated on offers</span></h4>
+    <ul class="list-inline widget-social">
+      <li class="list-inline-item"><a href="#"><i class="ti-instagram"></i></a></li>
+      <li class="list-inline-item"><a href="#"><i class="ti-email"></i></a></li>
+      <li class="list-inline-item"><a href="#"><i class="ti-mobile"></i></a></li>
+    </ul>
+  </div>
+  
+</aside>
+  <div class="col-lg-8  mb-5 mb-lg-0">
+  <h2 class="h5 section-title">About Us</h2>
+  <article class="card mb-4">
+  <div class="post-slider">
+      <img src="images/post/post-10.jpg" class="card-img-abt" alt="post-thumb">
+      <img src="images/post/post-1.jpg" class="card-img-abt" alt="post-thumb">
+  </div>
+  <div class="promotion-content">
+    <h5 class="text-white mb-3">Premium Ladies Spa and Salon </h5>
+    <p class="text-white mb-4">Our journey began in 2016 with a simple dream: to create a space where everyone 
+      feels valued and cared for. With every service we offer, from massages to hair styling, we strive
+       to exceed expectations and bring joy to our clients.</p>
+       <p class="text-white mb-4"> We don't just provide services; we offer experiences. Whether you're looking for a
+         quick pick-me-up or a full-day retreat, our skilled professionals are here to make you feel relaxed and beautiful.
+         We use only the finest products and techniques to ensure you leave feeling refreshed and delighted.</p>       
+  </div>
+  </article>  
+  </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section-sm">
+  <div class="container">
+   <h2 class="h5 section-title">Our Bestsellers</h2>
+    <div class="row">
+       <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card border-0 rounded-0 text-center shadow-none overflow-hidden">
+            <a href="#!">
+               <img src="images/shop/01.jpg" alt="" class="card-img-top rounded-0">
+               <div class="card-body">
+                  <h4 class="text-uppercase mb-3">smart watch</h4>
+                  <p class="h4 text-muted font-weight-light mb-3">Lip Gloss</p>
+                  <p class="h4">2 KD</p>
+               </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card border-0 rounded-0 text-center shadow-none overflow-hidden">
+             <a href="#!">
+               <img src="images/shop/02.jpg" alt="" class="card-img-top rounded-0">
+               <div class="card-body">
+                  <h4 class="text-uppercase mb-3">Wall clock</h4>
+                  <p class="h4 text-muted font-weight-light mb-3">Lip Gloss</p>
+                  <p class="h4">2 KD</p>
+               </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card border-0 rounded-0 text-center shadow-none overflow-hidden">
+             <a href="#!">
+               <span class="badge badge-primary">SALE</span>
+               <img src="images/shop/03.jpg" alt="" class="card-img-top rounded-0">
+               <div class="card-body">
+                  <h4 class="text-uppercase mb-3">Wooden slut</h4>
+                  <p class="h4 text-muted font-weight-light mb-3">Lip Gloss</p>
+                  <p class="h4">2 KD</p>
+               </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card border-0 rounded-0 text-center shadow-none overflow-hidden">
+             <a href="#!">
+               <img src="images/shop/04.jpg" alt="" class="card-img-top rounded-0">
+               <div class="card-body">
+                  <h4 class="text-uppercase mb-3">Sun-glass</h4>
+                  <p class="h4 text-muted font-weight-light mb-3">Lip Gloss</p>
+                  <p class="h4">2 KD</p>
+               </div>
+             </a>
+          </div>
+       </div>
+       <div class="col-12 text-center mt-5">
+        <a href="https://themefisher.com/" class="btn btn-primary">See More</a>        
+       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-5">
+        <h2 class="h5 section-title">What Our Clients Say</h2>
+        <article class="card">
+          <div class="post-slider slider-sm">
+            <img src="images/post/post-1.jpg" class="card-img-top" alt="post-thumb">
+          </div>
+          
+          <div class="card-body">
+            <h3 class="h4 mb-3"><a class="post-title" href="post-details.html">Amazing Service</a></h3>
+            <ul class="card-meta list-inline">
+              <li class="list-inline-item">
+                <a href="author-single.html" class="card-meta-author">
+                  <img src="images/john-doe.jpg">
+                  <span>Charls Xaviar</span>
+                </a>              
+            </ul>
+            <p>It’s no secret that the digital industry is booming. From exciting startups to …</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-4 mb-5">
+        <!-- <h2 class="h5 section-title">Trending Post</h2> -->
+        <br><br>
+        <article class="card mb-4">
+          <div class="card-body d-flex">
+            <img class="card-img-sm" src="images/post/post-3.jpg">
+            <div class="ml-3">
+              <h4><a href="post-details.html" class="post-title">Favorite Salon</a></h4>
+              <p>It’s no secret that the digital industry is booming.</p>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card mb-4">
+          <div class="card-body d-flex">
+            <img class="card-img-sm" src="images/post/post-2.jpg">
+            <div class="ml-3">
+              <h4><a href="post-details.html" class="post-title">Favorite Salon</a></h4>
+              <p>It’s no secret that the digital industry is booming.</p>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card mb-4">
+          <div class="card-body d-flex">
+            <img class="card-img-sm" src="images/post/post-4.jpg">
+            <div class="ml-3">
+              <h4><a href="post-details.html" class="post-title">Favorite Salon</a></h4>
+              <p>It’s no secret that the digital industry is booming.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 mb-5">
+        <!-- <h2 class="h5 section-title">Popular Post</h2> -->
+        <br><br>
+        <article class="card">
+          <div class="post-slider slider-sm">
+            <img src="images/post/post-5.jpg" class="card-img-top" alt="post-thumb">
+          </div>
+          <div class="card-body">
+            <h3 class="h4 mb-3"><a class="post-title" href="post-details.html">Amazing Service</a></h3>
+            <ul class="card-meta list-inline">
+              <li class="list-inline-item">
+                <a href="author-single.html" class="card-meta-author">
+                  <img src="images/john-doe.jpg">
+                  <span>Charls Xaviar</span>
+                </a>              
+            </ul>
+            <p>It’s no secret that the digital industry is booming. From exciting startups to …</p>
+          </div>
+        </article>
+      </div>     
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <svg class="footer-border" height="214" viewBox="0 0 2204 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2203 213C2136.58 157.994 1942.77 -33.1996 1633.1 53.0486C1414.13 114.038 1200.92 188.208 967.765 118.127C820.12 73.7483 263.977 -143.754 0.999958 158.899"
+      stroke-width="2" />
+  </svg>
+  
+  <div class="instafeed text-center mb-5">
+      <h2 class="h3 mb-4">INSTAGRAM POST</h2>
+      
+      <div class="instagram-slider">
+        <div class="instagram-post"><img src="images/instagram/1.jpg"></div>
+        <div class="instagram-post"><img src="images/instagram/2.jpg"></div>
+        <div class="instagram-post"><img src="images/instagram/4.jpg"></div>
+        <div class="instagram-post"><img src="images/instagram/3.jpg"></div>
+        <div class="instagram-post"><img src="images/instagram/2.jpg"></div>
+        <div class="instagram-post"><img src="images/instagram/1.jpg"></div>
+        <div class="instagram-post"><img src="images/instagram/3.jpg"></div>
+        <div class="instagram-post"><img src="images/instagram/4.jpg"></div>
+        <div class="instagram-post"><img src="images/instagram/2.jpg"></div>
+        <div class="instagram-post"><img src="images/instagram/4.jpg"></div>
+      </div>
+  </div>
+  
+  <div class="container">
+      <div class="row align-items-center">
+      <div class="col-md-5 text-center text-md-left mb-4">
+          <!-- <ul class="list-inline footer-list mb-0">
+            <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li class="list-inline-item"><a href="terms-conditions.html">Terms Conditions</a></li>
+          </ul> -->
+      </div>
+      <div class="col-md-2 text-center mb-4">
+          <a href="index.html"><img class="img-fluid" width="100px" src="images/logo.png" alt="Reader | Hugo Personal Blog Template"></a>      
+          <ul class="list-inline footer-list mb-0">
+            <li class="list-inline-item"><a href="#"><i class="ti-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="ti-email"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="ti-mobile"></i></a></li>
+          </ul>
+      </div>
+      <div class="col-12">
+          <div class="border-bottom border-default"></div>
+      </div>
+      </div>
+  </div>
+  </footer>
+
+
+  <!-- JS Plugins -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+  <script src="plugins/slick/slick.min.js"></script>
+
+  <script src="plugins/instafeed/instafeed.min.js"></script>
+
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script></body>
+</html>
